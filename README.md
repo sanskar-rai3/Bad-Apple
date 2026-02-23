@@ -1,0 +1,1 @@
+Bad apple in terminal using OpenCV in C++

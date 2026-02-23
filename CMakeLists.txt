@@ -10,7 +10,6 @@ include_directories(include)
 
 add_executable(Bad-Apple
     src/main.cpp
-    src/tool.cpp
 )
 
 target_link_libraries(Bad-Apple ${OpenCV_LIBS})

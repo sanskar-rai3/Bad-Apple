@@ -1,0 +1,3 @@
+/home/emxfire/C++/Bad-Apple/build/CMakeFiles/Bad-Apple.dir
+/home/emxfire/C++/Bad-Apple/build/CMakeFiles/edit_cache.dir
+/home/emxfire/C++/Bad-Apple/build/CMakeFiles/rebuild_cache.dir

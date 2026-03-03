@@ -9,7 +9,7 @@
 #define WIDTH 100     // Since characters are taller than they are wider its better if width ≈ height * 2
 #define HEIGHT 40
 
-const char *brightness_scale = " .,-~+=&%#$@$";
+const char *brightness_scale = " .,-~+=&%#$@";
 
 void clearScreen(void);
 
@@ -19,6 +19,10 @@ int main(int argc, char *argv[]) {
     frame_buffer.reserve(WIDTH * HEIGHT + HEIGHT);
 
     cv::VideoCapture cap("../asset/bad_apple.mp4");
+    if (!cap.isOpened()) {
+        std::cerr << "Error Opening the video\n";
+        return -1;
+    }
 
     system("mpv --quiet ../asset/bad_apple.mp3 &");
     std::cout << "\033[?25l";  // Hide cursor
@@ -28,8 +32,8 @@ int main(int argc, char *argv[]) {
         cv::Mat frame;
         bool ret = cap.read(frame);
         if (!ret) {
-            std::cerr << "Error Opening Video\n";
-            return -1;
+            std::cout << "Exited\n";
+            break;
         }
 
         cv::cvtColor(frame, frame, cv::COLOR_BGR2GRAY);
@@ -47,7 +51,7 @@ int main(int argc, char *argv[]) {
         }
         std::cout << frame_buffer;
 
-        usleep(27500);
+        usleep(25500);
      }
 
      std::cout << "\033[?25h"; // Unhide cursor

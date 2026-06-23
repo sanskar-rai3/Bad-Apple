@@ -1,10 +1,3 @@
 # ninja log v7
-4	29	1771853645739591297	CMakeFiles/Bad-Apple.dir/src/tool.cpp.o	fe1c65af411afd49
-21	3315	1771947995509968221	CMakeFiles/Bad-Apple.dir/src/main.cpp.o	28c95c43f9257c1
-3315	4200	1771947998803995734	Bad-Apple	c3cbdeff4f54af52
-4	149	1771859377468728207	build.ninja	abf63445ea30cbdf
-4	149	1771859377468728207	/home/emxfire/C++/Bad-Apple/build/cmake_install.cmake	abf63445ea30cbdf
-8	3325	1771948094664788488	CMakeFiles/Bad-Apple.dir/src/main.cpp.o	28c95c43f9257c1
-3325	4141	1771948097981815664	Bad-Apple	c3cbdeff4f54af52
-4	3310	1771948343588789568	CMakeFiles/Bad-Apple.dir/src/main.cpp.o	28c95c43f9257c1
-3310	4109	1771948346894815702	Bad-Apple	c3cbdeff4f54af52
+1	2572	1782243794849463258	CMakeFiles/Bad-Apple.dir/src/main.cpp.o	6db3a8601f5b89dc
+2573	3091	1782243797421828321	Bad-Apple	a1399d8093cfe591
